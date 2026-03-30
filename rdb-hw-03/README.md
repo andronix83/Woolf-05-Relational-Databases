@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This repository contains the results of the database design and querying homework. The Data Definition Language (DDL) file used to create the tables was composed based on the analysis of the provided CSV files from the dataset. 
+In order to better understand the database, the Data Definition Language (DDL) file used to create the tables was composed based on the analysis of the provided CSV files from the dataset. 
 
 You can find the SQL script used to create the database schema here: [create_tables_ddl.sql](./create_tables_ddl.sql).
 
@@ -104,7 +104,7 @@ SELECT * FROM products;
 -- Select only name and phone columns from the shippers table
 SELECT name, phone FROM shippers;
 ```
-**Screenshot of the query results:**
+#### Screenshot of the query results:
 ![Query result](images/result_1_1.png)
 ![Query result](images/result_1_2.png)
 
@@ -123,7 +123,7 @@ SELECT
     MIN(price) AS minimum_price
 FROM products;
 ```
-**Screenshot of the query result:**
+#### Screenshot of the query result:
 ![Query result](images/result_2.png)
 
 
@@ -140,7 +140,7 @@ FROM products
 ORDER BY price DESC 
 LIMIT 10;
 ```
-**Screenshot of the query result:**
+#### Screenshot of the query result:
 ![Query result](images/result_3.png)
 
 
@@ -156,7 +156,7 @@ SELECT COUNT(*) AS products_in_range
 FROM products 
 WHERE price BETWEEN 20 AND 100;
 ```
-**Screenshot of the query result:**
+#### Screenshot of the query result:
 ![Query result](images/result_4.png)
 
 
@@ -175,7 +175,7 @@ SELECT
 FROM products 
 GROUP BY supplier_id;
 ```
-**Screenshot of the query result:**
+#### Screenshot of the query result:
 ![Query result](images/result_5.png)
 
 
